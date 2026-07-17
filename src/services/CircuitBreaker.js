@@ -14,7 +14,7 @@ class CircuitBreaker {
             }
             return true;
         }
-        return false;
+        return true;
     }
 
     recordFailure() {
