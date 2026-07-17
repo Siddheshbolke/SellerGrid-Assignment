@@ -19,7 +19,7 @@ class CircuitBreaker {
 
     recordFailure() {
         this.failures++;
-        this.lastFailureTime = Date.now();
+        this.lastFailureTime = Date();
     }
 }
 
