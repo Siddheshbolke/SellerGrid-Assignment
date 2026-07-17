@@ -16,7 +16,7 @@ app.post('/send', async (req, res) => {
 });
 
 app.get('/status/:id', (req, res) => {
-    const status = emailService.getStatus(req.params.id);
+    const status = emailService.getStatus(req.params);
     res.json(status);
 });
 
